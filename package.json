@@ -1,0 +1,27 @@
+{
+  "name": "unzipsfx-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Webpack plugin for Unzipsfx - Create self-extracting compressed binaries Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rise-Vision/unzipsfx-webpack-plugin.git"
+  },
+  "keywords": [
+    "Webpack",
+    "plugin",
+    "Unzipsfx"
+  ],
+  "author": "Rise Vision",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Rise-Vision/unzipsfx-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/Rise-Vision/unzipsfx-webpack-plugin#readme",
+  "dependencies": {
+    "webpack-sources": "^1.0.1"
+  }
+}
