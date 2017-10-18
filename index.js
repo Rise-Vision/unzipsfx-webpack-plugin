@@ -44,11 +44,11 @@ UnzipsfxPlugin.prototype.apply = function(compiler) {
     const outputFilename = options.outputFilename || compilation.options.output.filename || path.basename(outputPath);
     const zipFilePath = getPath(compilation, outputPath, outputFilename, ".zip");
 
-    getData(__dirname + "/unzipsfx").then((data)=>{
+    getData(__dirname + "/lnx/unzipsfx").then((data)=>{
       let linuxBuffer = Buffer.concat([data, compilation.assets[zipFilePath].source()]);
       compilation.assets[getPath(compilation, outputPath, outputFilename, ".sh")] = new RawSource(linuxBuffer);
 
-      getData(__dirname + "/unzipsfx.exe").then((data)=>{
+      getData(__dirname + "/win/unzipsfx.exe").then((data)=>{
         let windowsBuffer = Buffer.concat([data, compilation.assets[zipFilePath].source()]);
         compilation.assets[getPath(compilation, outputPath, outputFilename, ".exe")] = new RawSource(windowsBuffer);
         callback();
