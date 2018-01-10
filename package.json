@@ -1,6 +1,6 @@
 {
   "name": "unzipsfx-webpack-plugin",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Webpack plugin for Unzipsfx - Create self-extracting compressed binaries Edit",
   "main": "index.js",
   "scripts": {
