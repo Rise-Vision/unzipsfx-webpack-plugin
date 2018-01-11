@@ -34,7 +34,7 @@ function getPath(compilation, outputPath, outputFilename, extension) {
 }
 
 function compileArch(compilation, outputPath, outputFilename, arch, platform, callback) {
-  const zipFileName = (arch === "armv7l") ? `${outputFilename}-${arch}` : `${outputFilename}-${platform}-${arch}`;
+  const zipFileName = `${outputFilename}-${platform}-${arch}`;
   const zipFilePath = getPath(compilation, outputPath, zipFileName, ".zip");
   const unzipPath = (platform === "win") ? "/win/unzipsfx.exe" : `/${platform}-${arch}/unzipsfx`;
   const ext = (platform === "win") ? "exe" : "sh";
